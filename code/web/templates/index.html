@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Start a New Session</h2>
+<form action="{{ url_for('start_session') }}" method="POST">
+    <label for="task">Task:</label>
+    <input type="text" id="task" name="task" required>
+    <label for="duration">Duration (minutes):</label>
+    <input type="number" id="duration" name="duration" required>
+    <button type="submit">Start</button>
+</form>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Settings</h2>
+<form action="{{ url_for('settings') }}" method="POST">
+    <!-- Add form fields for settings here -->
+    <button type="submit">Save</button>
+</form>
+{% endblock %}

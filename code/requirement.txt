@@ -1,1 +1,3 @@
-# Add any external dependencies here
+Flask==2.0.2
+click==8.0.3
+Werkzeug==2.0.2
