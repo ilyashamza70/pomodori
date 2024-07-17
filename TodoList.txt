@@ -1,0 +1,51 @@
+ To-Do List and Priority Order
+Define User Stories and Personas
+
+Priority: High
+Status: Completed
+Gather Functional and Non-Functional Requirements
+
+Priority: High
+Status: Completed
+Create UML Diagrams
+
+Priority: High
+Status: In Progress
+Develop CLI Application
+
+Priority: High
+Status: Pending
+Develop Web Application
+
+Priority: Medium
+Status: Pending
+Set Up Database
+
+Priority: Medium
+Status: Pending
+Implement User Authentication
+
+Priority: Medium
+Status: Pending
+Containerize Applications with Docker
+
+Priority: Medium
+Status: Pending
+Write Tests for CLI and Web Application
+
+Priority: Medium
+Status: Pending
+Deploy Applications
+
+Priority: Medium
+Status: Pending
+Debug and Test Applications
+
+Priority: High
+Status: Pending
+Launch and Monitor Application
+
+Priority: High
+Status: Pending
+
+
