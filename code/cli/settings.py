@@ -1,6 +1,30 @@
 # cli/settings.py
 from models.settings import Settings
 
+class Settings:
+    def __init__(self, preset_duration=45, cycles=4, short_break=15, long_break=75, use_breaks=True):
+        self.preset_duration = preset_duration
+        self.cycles = cycles
+        self.short_break = short_break
+        self.long_break = long_break
+        self.use_breaks = use_breaks
+
+    @classmethod
+    def load(cls):
+        # Carica le impostazioni dal file di configurazione (implementazione fittizia)
+        # In una vera applicazione, questo metodo dovrebbe leggere da un file o database
+        return cls()
+
+    @classmethod
+    def default(cls):
+        # Imposta i valori predefiniti
+        return cls()
+
+    def save(self):
+        # Salva le impostazioni nel file di configurazione (implementazione fittizia)
+        # In una vera applicazione, questo metodo dovrebbe scrivere su un file o database
+        pass
+
 def load_settings():
     """
     Carica le impostazioni dal file di configurazione.
@@ -9,7 +33,7 @@ def load_settings():
         Settings: Un'istanza della classe Settings con le impostazioni caricate.
     """
     settings = Settings.load()
-    print(f"Loaded settings: {settings}")
+    print(f"Loaded settings: {settings.__dict__}")
     return settings
 
 def save_settings():
